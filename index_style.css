@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 87vw;
+    max-width: 400px;
+    margin: 20px 0;
+}
+
+.cards {
+    padding: 50px 50px 65px 50px;
+}
+
+section img {
+    margin-bottom: 30px;
+}
+
+section h1 {
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    margin-bottom: 50px;
+    line-height: 25px;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.learn_more {
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 32px;
+    text-decoration: none;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    border-radius: 35px;
+    transition: .2s ease-out;
+}
+
+.learn_more:hover {
+    background-color: initial;
+    color: #fff !important;
+    border: 2px solid #fff;
+}
+
+#sedans_card {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+
+#sedans_card .learn_more {
+    color: hsl(31, 77%, 52%);
+}
+
+#suvs_card {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#suvs_card .learn_more {
+    color: hsl(184, 100%, 22%);
+}
+
+#luxury_card {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+}
+
+#luxury_card .learn_more {
+    color: hsl(179, 100%, 13%);
+}
+
+
+@media only screen and (min-width: 1440px) {
+    main {
+        width: 100%;
+        max-width: 920px;
+        display: flex;
+    }
+
+    p {
+        margin-bottom: 85px;
+    }
+
+    #sedans_card {
+        border-radius: 10px 0 0 10px;
+    }
+
+    #luxury_card {
+        border-radius: 0 10px 10px 0;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    main {
+        width: 100%;
+        max-width: 920px;
+        display: flex;
+    }
+
+    p {
+        margin-bottom: 85px;
+    }
+
+    #sedans_card {
+        border-radius: 10px 0 0 10px;
+    }
+
+    #luxury_card {
+        border-radius: 0 10px 10px 0;
+    }
+
+}

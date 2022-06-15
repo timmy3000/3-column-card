@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 30px 50px;
+    background-color: #161a28;
+}
+
+header {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#column_title {
+    font-weight: normal;
+    color: #a1a1a1;
+}
+
+header a {
+    text-decoration: unset;
+    font-family: "Lexend Deca";
+    font-size: 12px;
+    color: #fff;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+article {
+    display: grid;
+    grid-template-areas: 
+    'item1 item1 item1 item1 item2 item2'
+    'item1 item1 item1 item1 item2 item2'
+    'item3 item3 item3 item4 item4 item4'
+    'item3 item3 item3 item5 item5 item5';
+    gap: 10px;
+    width: 100%;
+    height: 85vh;
+}
+
+#item_1 {
+    grid-area: item1;
+    background-color: #ea5225;
+}
+
+#item_2 {
+    grid-area: item2;
+    background-color: #faa31d;
+}
+
+#item_3 {
+    grid-area: item3;
+    background-color: #1cab4b;
+}
+
+#item_4 {
+    grid-area: item4;
+    background-color: #3ea8de;
+}
+
+#item_5 {
+    grid-area: item5;
+    background-color: #3ea8de;
+}
+
+
+#page {
+  display: grid;
+  width: 100%;
+  height: 250px;
+  grid-template-areas: "head head"
+                       "nav  main"
+                       "nav  foot";
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-columns: 150px 1fr;
+}
